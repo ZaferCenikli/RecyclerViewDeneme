@@ -55,15 +55,28 @@ class RvAdapter(private val mContex:Context,private val ulkelerlistesi:List<Ulke
             popup.menuInflater.inflate(R.menu.popup_menu,popup.menu)
             popup.show()
 
-            /*popup.setOnMenuItemClickListener {item->
+            popup.setOnMenuItemClickListener {item->
 
                 when(item.itemId){
-                    R.
+                    R.id.action_sil ->{
+                        Toast.makeText(mContex,"Sil :${ulke.ulkeAdi}",Toast.LENGTH_SHORT).show()
+                        true
+
+
+
+
+                    }
+                    R.id.action_düzenle ->{
+                        Toast.makeText(mContex,"Düzenle:${ulke.ulkeAdi}",Toast.LENGTH_SHORT).show()
+                        true
+
+                    }
+                    else -> false
                 }
 
 
 
-            }*/
+            }
 
 
 
